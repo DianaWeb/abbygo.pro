@@ -506,11 +506,11 @@ body {
 }
 
 .form-bottom input:hover, textarea:hover {
-    box-shadow: 0px 0px 10px 0px rgba(1, 153, 230, 0.3);
+    box-shadow: 0 0 10px 0 rgba(1, 153, 230, 0.3);
 }
 
 .form-bottom input:focus, textarea:focus {
-    box-shadow: 0px 0px 10px 0px rgba(1, 153, 230, 0.3);
+    box-shadow: 0 0 10px 0 rgba(1, 153, 230, 0.3);
 }
 
 .form-bottom textarea {
@@ -753,6 +753,7 @@ input[type=checkbox] {
     }
 
     .register-now {
+        text-align: center;
         bottom: -70px;
         right: 0;
         padding-left: 30px;
@@ -796,9 +797,19 @@ input[type=checkbox] {
 }
 
 @media screen and (max-width: 420px) {
-    /*.menu > ul > li:focus .dropdown-menu {*/
-    /*    display: flex;*/
-    /*}*/
+    .header-flex {
+        justify-content: center;
+    }
+    .header-number {
+        justify-content: center;
+    }
+    .form-top {
+        justify-content: center;
+    }
+    .form-top-button {
+        margin-left: -5px;
+    }
+
     .form-bottom,
     .contacts {
         width: 100%;
